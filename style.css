@@ -36,18 +36,18 @@ a {
 
 /* ---------------- Pixel-Perfect ---------------- */
 
-/*body::after {
+/* body::after {
     content: "";
     display: block;
     width: 1660px;
     height: 3207px;
-    background-image: url("https://raw.githubusercontent.com/netology-code/html-2-diploma/master/sources/NOEMI_Modern_ru.jpg");
+    background-image: url("/images/NOEMI_mq_desktop.jpg");
     position: absolute;
     top: 0;
     left: calc(50% - 830px);
     opacity: 0.6;
     z-index: 999;
-}/*
+} */
 
 /* ---------------- Pixel-Perfect ---------------- */
 
@@ -200,12 +200,12 @@ a {
     text-transform: uppercase;
     border: 3px solid #b59f5b;
     color: #fff;
-    padding: 40px 35px;
-    margin: 30% 6% 3% 6%;
+    padding: 34px 30px 32px 30px;
+    margin: 134px 24px 16px 20px;
 }
 
 .mb-12px {
-    margin-bottom: 12px !important;
+    margin-bottom: 6px !important;
 }
 
 .mr-20px {
@@ -219,7 +219,7 @@ a {
 
 .trend_name {
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2;
     font-weight: 700;
 }
