@@ -530,7 +530,6 @@ a {
     font-weight: 700;
     padding: 12px 12px;
     border: 3px solid #eeeeee;
-    vertical-align: middle;
 }
 
 .tag-item-link:hover {
@@ -799,7 +798,7 @@ a {
     font-size: 20px;
 }
 
-.form__row {
+.form {
     margin: 15px 0;
 }
 
@@ -817,7 +816,7 @@ a {
     width: 100%;
     height: 45px;
     padding-left: 20px;
-    background: url(../svg/form-arrows.svg);
+    background: url(/svg/form-arrows.svg);
     background-repeat: no-repeat;
     background-position: top 45% right 15px;
     background-size: 18px;
@@ -842,7 +841,7 @@ a {
     margin-left: 15px;
 }
 
-.radio__group__text::before {
+.radio__group-text::before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -853,17 +852,17 @@ a {
     background-size: 20px;
 }
 
-.radio__group__text::before {
+.radio__group-text::before {
     display: inline-block;
     vertical-align: middle;
 }
 
-.radio__group__text::before {
+.radio__group-text::before {
     margin-right: 8px;
 }
 
 
-.radio:checked~.radio__group__text::before {
+.radio:checked~.radio__group-text::before {
     background-image: url("/svg/form-circle.svg");
 }
 
@@ -899,7 +898,7 @@ textarea:focus {
     outline: 1px solid #b59f5b;
 }
 
-.popup__button {
+.popup__btn {
     width: 100%;
     border: none;
     padding: 15px 120px;
@@ -913,7 +912,7 @@ textarea:focus {
     cursor: pointer;
 }
 
-.popup__button:hover,
-.popup__button:focus {
+.popup__btn:hover,
+.popup__btn:focus {
     background-color: #323232;
 }
