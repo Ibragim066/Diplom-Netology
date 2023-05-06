@@ -57,7 +57,7 @@ a {
 
 /*********** Blocks ************/
 .container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -73,7 +73,6 @@ a {
 /*********** Header-Nav ************/
 .header-nav {
     position: relative;
-    min-width: 1200px;
     padding-top: 25px;
     padding-bottom: 110px;
     margin-bottom: 60px;
@@ -87,13 +86,16 @@ a {
 
 .header-nav::after {
     content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .header-nav-top {
@@ -162,48 +164,85 @@ a {
 
 .trends-head {
     font-size: 20px !important;
+    text-align: center;
 }
 
 
-.trends {
+.trends {}
+
+.trends-list {
+    margin-top: 30px;
     display: flex;
-    min-width: 1200px;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .trend {
     position: relative;
-    overflow: hidden;
     width: 25%;
     display: flex;
     align-items: flex-end;
     margin-right: 4px;
+    padding: 8% 1.25em 1em 1.25em
 }
 
-.trend:last-child {
-    margin-right: 0;
-}
-
-.trend_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.trend::after {
+    content: "";
+    background-color: #000000;
     position: absolute;
     top: 0;
     left: 0;
-    filter: brightness(40%);
+    right: 0;
+    bottom: 0;
+    opacity: 0.6;
 }
+
+.trend:last-child {
+    margin-right: 0px;
+}
+
+
+.item-1 {
+    background: #000;
+    background-image: url("/images/trend1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-2 {
+    background: #000;
+    background-image: url("/images/trend2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-3 {
+    background: #000;
+    background-image: url("/images/trend3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.item-4 {
+    background: #000;
+    background-image: url("/images/trend4.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 
 .news-container {
     display: block;
     position: relative;
     z-index: 1;
-    font-size: 15px;
-    font-family: "OpenSans", sans-serif;
     text-transform: uppercase;
     border: 3px solid #b59f5b;
     color: #fff;
-    padding: 34px 30px 32px 30px;
-    margin: 134px 24px 16px 20px;
+    padding: 2em;
 }
 
 .mb-12px {
@@ -229,15 +268,13 @@ a {
 /*********** News ************/
 .for-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
     margin-top: 60px;
     margin-bottom: 70px;
 }
 
 .news {
-    max-width: 780px;
+    width: 780px;
 }
 
 .article-photo {
@@ -348,7 +385,7 @@ a {
 /* -------------------- Sidebar ------------------ */
 
 .sidebar {
-    width: 271px;
+    width: 270px;
 }
 
 .sidebar-section {
@@ -915,4 +952,139 @@ textarea:focus {
 .popup__btn:hover,
 .popup__btn:focus {
     background-color: #323232;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 1200px;
+        padding: 0 35px;
+    }
+
+    /**************** Header *********************/
+    .header-nav {
+        background-image: url("/images/banner-bg-tablet.jpg");
+        padding-top: 40px;
+    }
+
+    .header-nav-logo {
+        width: 157px;
+    }
+
+    .burger__menu {
+        display: inline-block;
+        cursor: pointer;
+        position: fixed;
+        right: 5%;
+        position: absolute;
+    }
+
+    .top,
+    .middle,
+    .bottom {
+        width: 23px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.3s;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .header-nav-title {
+        width: 620px;
+        font-size: 40px;
+    }
+
+    /******************** Trends *******************/
+
+    .trends__head {
+        font-size: 20px;
+    }
+
+    .trends-list {
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: 49.65%;
+        padding-top: 95px;
+        margin-right: 0px;
+    }
+
+    .mt-5px {
+        margin-top: 5px;
+    }
+
+    .trend_name {
+        font-size: 17px;
+    }
+
+    /****************** News *****************/
+
+    .for-content {
+        margin-top: 50px;
+    }
+
+    .news {
+        width: 56%;
+    }
+
+    .article {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 42px;
+        border-bottom: 3px solid #eeeeee;
+    }
+
+    .article:last-child {
+        margin-bottom: 0;
+    }
+
+    .article-photo {
+        max-width: 381px;
+    }
+
+    .article-box {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .article-title {
+        font-size: 17px;
+        margin-bottom: 28px;
+    }
+
+    .date-author {
+        margin-bottom: 33px;
+    }
+
+    .text {
+        margin-bottom: 15px;
+    }
+
+    /******************* Shop *****************/
+
+    .shop__item {
+        width: 48%;
+    }
+
+    .mt-45px {
+        margin-top: 45px;
+    }
+
+    .shop__card-title {
+        font-size: 17px;
+    }
+
+    .shop__card-bottom {
+        margin-top: 20px;
+    }
+
+    .footer {
+        margin-bottom: 40px;
+    }
 }
