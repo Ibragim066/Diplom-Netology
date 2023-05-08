@@ -23,6 +23,7 @@ body {
     background-color: #fff;
     font-size: 15px;
     color: #0f0d0e;
+    outline: solid red;
 }
 
 
@@ -96,6 +97,10 @@ a {
     right: 0;
     background-color: #000;
     opacity: 0.6;
+}
+
+.burger__menu {
+    display: none;
 }
 
 .header-nav-top {
@@ -174,7 +179,6 @@ a {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
 }
 
 .trend {
@@ -274,11 +278,7 @@ a {
 }
 
 .news {
-    width: 780px;
-}
-
-.article-photo {
-    width: 380px;
+    width: 68%;
 }
 
 .article {
@@ -286,6 +286,10 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.article-img {
+    max-width: 381px;
 }
 
 .article:nth-child(n + 2) {
@@ -664,7 +668,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    width: 300px;
+    max-width: 300px;
     padding: 12px 0 10px;
     margin: 0;
 
@@ -955,7 +959,10 @@ textarea:focus {
 }
 
 
-@media (min-width: 768px) and (max-width: 1199px) {
+/********************************* Media ****************************/
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
     .container {
         max-width: 1200px;
         padding: 0 35px;
@@ -994,7 +1001,7 @@ textarea:focus {
     }
 
     .header-nav-title {
-        width: 620px;
+        width: 600px;
         font-size: 40px;
     }
 
@@ -1023,6 +1030,10 @@ textarea:focus {
         font-size: 17px;
     }
 
+    .sidebar {
+        width: 220px;
+    }
+
     /****************** News *****************/
 
     .for-content {
@@ -1030,7 +1041,7 @@ textarea:focus {
     }
 
     .news {
-        width: 56%;
+        margin-right: 36px;
     }
 
     .article {
@@ -1045,7 +1056,7 @@ textarea:focus {
     }
 
     .article-photo {
-        max-width: 381px;
+        width: 100%;
     }
 
     .article-box {
@@ -1069,11 +1080,15 @@ textarea:focus {
     /******************* Shop *****************/
 
     .shop__item {
-        width: 48%;
+        max-width: 47%;
     }
 
     .mt-45px {
         margin-top: 45px;
+    }
+
+    .shop__card {
+        outline-offset: 10px;
     }
 
     .shop__card-title {
@@ -1088,5 +1103,133 @@ textarea:focus {
 
     .footer {
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header-nav {
+        background: url("/images/banner-mobile.jpg") no-repeat center center / cover;
+        padding-top: 30px;
+        padding-bottom: 215px;
+        position: relative;
+    }
+
+    .burger__menu {
+        display: inline-block;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+
+    .top,
+    .middle,
+    .bottom {
+        width: 23px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    .menu-nav {
+        display: none;
+    }
+
+    .header-nav-top {
+        padding-top: 35px;
+    }
+
+    .header-nav-logo {
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    .logo-img {
+        padding-left: 0;
+        margin: 166px auto 0;
+    }
+
+    .header-nav-title {
+        width: 280px;
+        font-size: 26px;
+        margin-top: 40px;
+    }
+
+    .trends {
+        margin-top: 30px;
+    }
+
+    .section-header {
+        /*******************/
+        font-size: 1rem;
+    }
+
+    .trends-list {
+        margin-top: 25px;
+        flex-direction: column;
+    }
+
+    .trend {
+        width: 100%;
+        margin-bottom: 4px;
+    }
+
+    .for-content {
+        flex-direction: column;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .article {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 42px;
+        border-bottom: 3px solid #eeeeee;
+    }
+
+    .article-photo {
+        width: 100%;
+    }
+
+    .article-box {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .text {
+        margin-bottom: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .form-query {
+        width: 100%;
+    }
+
+    .shop__list {
+        justify-content: center;
+    }
+
+    .shop__item {
+        width: 98%;
+    }
+
+    .up {
+        margin-top: 45px;
+    }
+
+    .popup__form {
+        width: 90%;
+    }
+
+    .popup__btn {
+        padding: 15px 90px;
+        color: #ffffff;
     }
 }
