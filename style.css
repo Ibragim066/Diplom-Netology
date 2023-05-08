@@ -293,7 +293,7 @@ a {
 }
 
 .article:nth-child(n + 2) {
-    margin-top: 61px;
+    margin-top: 57px;
 }
 
 .article-box {
@@ -631,8 +631,8 @@ a {
 
 .shop__title {
     font-size: 20px;
-    margin-bottom: 26px;
-    margin-top: -5px;
+    margin-bottom: 25px;
+    margin-top: -12px;
 }
 
 a {
