@@ -812,7 +812,7 @@ a {
 
 .popup__form::before {
     content: "";
-    background-image: url(/svg/form-x.svg);
+    background-image: url(svg/form-x.svg);
     width: 20px;
     height: 20px;
     position: absolute;
@@ -856,7 +856,7 @@ a {
     width: 100%;
     height: 45px;
     padding-left: 20px;
-    background: url(/svg/form-arrows.svg);
+    background: url(svg/form-arrows.svg);
     background-repeat: no-repeat;
     background-position: top 45% right 15px;
     background-size: 18px;
