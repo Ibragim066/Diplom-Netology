@@ -78,7 +78,7 @@ a {
     margin-bottom: 60px;
     background-color: #000000;
     color: #ffffff;
-    background-image: url(images/banner-bg.jpg);
+    background-image: url('images/banner-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -207,7 +207,7 @@ a {
 
 .item-1 {
     background: #000;
-    background-image: url(images/trend1.jpg);
+    background-image: url('images/trend1.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -215,7 +215,7 @@ a {
 
 .item-2 {
     background: #000;
-    background-image: url(images/trend2.jpg);
+    background-image: url('images/trend2.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -223,7 +223,7 @@ a {
 
 .item-3 {
     background: #000;
-    background-image: url(images/trend3.jpg);
+    background-image: url('images/trend3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -231,7 +231,7 @@ a {
 
 .item-4 {
     background: #000;
-    background-image: url(images/trend4.jpg);
+    background-image: url('images/trend4.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -506,7 +506,7 @@ a {
     height: 50px;
     border: none;
     cursor: pointer;
-    background-image: url(svg/search.svg);
+    background-image: url('svg/search.svg');
     background-position: center center;
     background-size: 20px 20px;
     background-repeat: no-repeat;
@@ -772,15 +772,15 @@ a {
 }
 
 .dribbble {
-    background-image: url(svg/001-dribbble.svg);
+    background-image: url('svg/001-dribbble.svg');
 }
 
 .pinterest {
-    background-image: url(svg/002-pinterest.svg);
+    background-image: url('svg/002-pinterest.svg');
 }
 
 .tumblr {
-    background-image: url(svg/003-tumblr.svg);
+    background-image: url('svg/003-tumblr.svg');
 }
 
 .copy-box {
@@ -812,7 +812,7 @@ a {
 
 .popup__form::before {
     content: "";
-    background-image: url(svg/form-x.svg);
+    background-image: url('svg/form-x.svg');
     width: 20px;
     height: 20px;
     position: absolute;
@@ -856,7 +856,7 @@ a {
     width: 100%;
     height: 45px;
     padding-left: 20px;
-    background: url(svg/form-arrows.svg);
+    background: url('svg/form-arrows.svg');
     background-repeat: no-repeat;
     background-position: top 45% right 15px;
     background-size: 18px;
@@ -886,7 +886,7 @@ a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(svg/form-empty-circle.svg);
+    background-image: url('svg/form-empty-circle.svg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -903,7 +903,7 @@ a {
 
 
 .radio:checked~.radio__group-text::before {
-    background-image: url(svg/form-circle.svg);
+    background-image: url('svg/form-circle.svg');
 }
 
 .radio {
@@ -969,7 +969,7 @@ textarea:focus {
 
     /**************** Header *********************/
     .header-nav {
-        background-image: url(images/banner-bg-tablet.jpg);
+        background-image: url('images/banner-bg-tablet.jpg');
         padding-top: 40px;
     }
 
@@ -1107,7 +1107,7 @@ textarea:focus {
 
 @media (max-width: 640px) {
     .header-nav {
-        background: url(images/banner-mobile.jpg) no-repeat center center / cover;
+        background: url('images/banner-mobile.jpg') no-repeat center center / cover;
         padding-top: 30px;
         padding-bottom: 215px;
         position: relative;
