@@ -208,7 +208,7 @@ a {
 
 .item-1 {
     background: #000;
-    background-image: url("images/trend1.jpg");
+    background-image: url(images/trend1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -216,7 +216,7 @@ a {
 
 .item-2 {
     background: #000;
-    background-image: url("images/trend2.jpg");
+    background-image: url(images/trend2.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -224,7 +224,7 @@ a {
 
 .item-3 {
     background: #000;
-    background-image: url("images/trend3.jpg");
+    background-image: url(images/trend3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -232,7 +232,7 @@ a {
 
 .item-4 {
     background: #000;
-    background-image: url("images/trend4.jpg");
+    background-image: url(images/trend4.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -773,15 +773,15 @@ a {
 }
 
 .dribbble {
-    background-image: url('svg/001-dribbble.svg');
+    background-image: url(svg/001-dribbble.svg);
 }
 
 .pinterest {
-    background-image: url('svg/002-pinterest.svg');
+    background-image: url(svg/002-pinterest.svg);
 }
 
 .tumblr {
-    background-image: url('svg/003-tumblr.svg');
+    background-image: url(svg/003-tumblr.svg);
 }
 
 .copy-box {
@@ -887,7 +887,7 @@ a {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("svg/form-empty-circle.svg");
+    background-image: url(svg/form-empty-circle.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -904,7 +904,7 @@ a {
 
 
 .radio:checked~.radio__group-text::before {
-    background-image: url("svg/form-circle.svg");
+    background-image: url(svg/form-circle.svg);
 }
 
 .radio {
@@ -970,7 +970,7 @@ textarea:focus {
 
     /**************** Header *********************/
     .header-nav {
-        background-image: url("images/banner-bg-tablet.jpg");
+        background-image: url(images/banner-bg-tablet.jpg);
         padding-top: 40px;
     }
 
@@ -1108,7 +1108,7 @@ textarea:focus {
 
 @media (max-width: 640px) {
     .header-nav {
-        background: url("images/banner-mobile.jpg") no-repeat center center / cover;
+        background: url(images/banner-mobile.jpg) no-repeat center center / cover;
         padding-top: 30px;
         padding-bottom: 215px;
         position: relative;
