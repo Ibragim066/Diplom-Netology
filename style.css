@@ -1,17 +1,17 @@
 /*********** Connecting-Fonts ************/
 @font-face {
     font-family: "Open Sans";
-    src: url(/fonts/OpenSans-Regular.woff) format("woff"),
-        url(/fonts/OpenSans-Regular.woff2) format("woff2"),
-        url(/fonts/OpenSans-Regular.ttf) format("truetype");
+    src: url("/fonts/OpenSans-Regular.woff") format("woff"),
+        url("/fonts/OpenSans-Regular.woff2") format("woff2"),
+        url("/fonts/OpenSans-Regular.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
     font-family: "Open Sans";
-    src: url(/fonts/OpenSans-Bold.woff) format("woff"),
-        url(/fonts/OpenSans-Bold.woff2) format("woff2"),
-        url(/fonts/OpenSans-Bold.ttf) format("truetype");
+    src: url("/fonts/OpenSans-Bold.woff") format("woff"),
+        url("/fonts/OpenSans-Bold.woff2") format("woff2"),
+        url("/fonts/OpenSans-Bold.ttf") format("truetype");
     font-weight: bold;
 }
 
@@ -74,7 +74,7 @@ a {
 .header-nav {
     position: relative;
     padding-top: 25px;
-    padding-bottom: 110px;
+    padding-bottom: 100px;
     margin-bottom: 60px;
     background-color: #000000;
     color: #ffffff;
@@ -98,7 +98,7 @@ a {
     opacity: 0.6;
 }
 
-.burger__menu {
+.burger-menu {
     display: none;
 }
 
@@ -157,7 +157,7 @@ a {
     margin-bottom: 21px;
     color: #efeaea;
     font-size: 45px;
-    line-height: 1.6;
+    line-height: 1.7;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -170,9 +170,6 @@ a {
     font-size: 20px !important;
     text-align: center;
 }
-
-
-.trends {}
 
 .trends-list {
     margin-top: 30px;
@@ -256,12 +253,12 @@ a {
     margin-right: 20px;
 }
 
-.trend_about {
+.trend-about {
     text-decoration: none;
     color: #fff;
 }
 
-.trend_name {
+.trend-name {
     margin: 0;
     font-size: 20px;
     line-height: 1.2;
@@ -388,7 +385,7 @@ a {
 /* -------------------- Sidebar ------------------ */
 
 .sidebar {
-    width: 270px;
+    width: 272px;
 }
 
 .sidebar-section {
@@ -401,7 +398,7 @@ a {
 
 .section-header {
     margin-top: 0;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -594,8 +591,8 @@ a {
     display: block;
     width: 100%;
     border-bottom: 1px solid #eeeeee;
-    padding-top: 13px;
-    padding-bottom: 13px;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .categories-item-link {
@@ -624,7 +621,7 @@ a {
 /****************** Shop *********************/
 
 .shop {
-    margin-bottom: 60px;
+    margin-bottom: 85px;
     padding: 0 40px;
 }
 
@@ -676,7 +673,7 @@ a {
 }
 
 .shop__card-title {
-    margin-bottom: 7px;
+    margin-bottom: 4px;
 }
 
 .shop__item-link {
@@ -718,6 +715,7 @@ a {
     font-weight: bold;
     background: #b59f5b;
     padding: 15px 30px;
+    font-size: 14px;
     border: none;
     color: #fff;
 
@@ -740,8 +738,8 @@ a {
 
 .socials {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 31px;
+    padding-bottom: 31px;
     background-color: #f4f7f6;
 }
 
@@ -799,7 +797,7 @@ a {
 /***************POPUP******************/
 
 
-.popup {
+.popup-hidden {
     visibility: hidden;
     width: 100%;
     height: 100vh;
@@ -810,7 +808,7 @@ a {
     z-index: 200;
 }
 
-.popup__form::before {
+.popup-form::before {
     content: "";
     background-image: url('svg/form-x.svg');
     width: 20px;
@@ -820,7 +818,7 @@ a {
     right: 0;
 }
 
-.popup__form {
+.popup-form {
     width: 392px;
     position: fixed;
     left: 50%;
@@ -830,7 +828,7 @@ a {
     background-color: #ffffff;
 }
 
-.popup__title {
+.popup-title {
     display: block;
     margin: 0 auto;
     color: #000;
@@ -842,14 +840,14 @@ a {
     margin: 15px 0;
 }
 
-.form__hint {
+.form-hint {
     display: block;
     font-size: 13px;
     margin-bottom: 10px;
     text-align: left;
 }
 
-.form__select {
+.form-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 0;
@@ -867,12 +865,12 @@ a {
     cursor: pointer;
 }
 
-.form__select:hover,
-.form__select:focus {
+.form-select:hover,
+.form-select:focus {
     outline: 1px solid #b59f5b;
 }
 
-.radio__group {
+.radio-group {
     display: inline-block;
     font-size: 15px;
 }
@@ -881,7 +879,7 @@ a {
     margin-left: 15px;
 }
 
-.radio__group-text::before {
+.radio-group-text::before {
     content: "";
     display: inline-block;
     width: 20px;
@@ -892,17 +890,17 @@ a {
     background-size: 20px;
 }
 
-.radio__group-text::before {
+.radio-group-text::before {
     display: inline-block;
     vertical-align: middle;
 }
 
-.radio__group-text::before {
+.radio-group-text::before {
     margin-right: 8px;
 }
 
 
-.radio:checked~.radio__group-text::before {
+.radio:checked~.radio-group-text::before {
     background-image: url('svg/form-circle.svg');
 }
 
@@ -913,14 +911,14 @@ a {
     width: 1px;
 }
 
-.option__text {
+.option-text {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.541);
     line-height: 1.2;
     text-align: left;
 }
 
-.textarea__style {
+.textarea-style {
     width: 100%;
     height: 130px;
     resize: none;
@@ -938,11 +936,12 @@ textarea:focus {
     outline: 1px solid #b59f5b;
 }
 
-.popup__btn {
+.popup-btn {
     width: 100%;
     border: none;
     padding: 15px 120px;
     color: #ffffff;
+    margin-top: 20px;
 
     background-color: #b59f5b;
     font-family: inherit;
@@ -952,8 +951,8 @@ textarea:focus {
     cursor: pointer;
 }
 
-.popup__btn:hover,
-.popup__btn:focus {
+.popup-btn:hover,
+.popup-btn:focus {
     background-color: #323232;
 }
 
@@ -977,7 +976,7 @@ textarea:focus {
         width: 157px;
     }
 
-    .burger__menu {
+    .burger-menu {
         display: inline-block;
         cursor: pointer;
         position: fixed;
@@ -1006,7 +1005,7 @@ textarea:focus {
 
     /******************** Trends *******************/
 
-    .trends__head {
+    .trends-head {
         font-size: 20px;
     }
 
@@ -1025,7 +1024,7 @@ textarea:focus {
         margin-top: 5px;
     }
 
-    .trend_name {
+    .trend-name {
         font-size: 17px;
     }
 
@@ -1088,10 +1087,11 @@ textarea:focus {
 
     .shop__item {
         max-width: 47%;
+        margin-top: 25px;
     }
 
-    .mt-45px {
-        margin-top: 45px;
+    .shop__title {
+        margin-bottom: 0;
     }
 
     .shop__card {
@@ -1121,7 +1121,7 @@ textarea:focus {
         position: relative;
     }
 
-    .burger__menu {
+    .burger-menu {
         display: inline-block;
         cursor: pointer;
         position: absolute;
@@ -1235,11 +1235,11 @@ textarea:focus {
         margin-top: 45px;
     }
 
-    .popup__form {
+    .popup-form {
         width: 90%;
     }
 
-    .popup__btn {
+    .popup-btn {
         padding: 15px 90px;
         color: #ffffff;
     }

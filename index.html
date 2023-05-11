@@ -14,7 +14,7 @@
     <header class="header-nav">
         <div class="container relative">
             <div class="header-nav-top">
-                <a class="burger__menu">
+                <a class="burger-menu">
                     <div class="top"></div>
                     <div class="middle"></div>
                     <div class="bottom"></div>
@@ -67,8 +67,8 @@
                             <a class="article-tags-link" href="#0">interior</a>
                         </li>
                     </ul>
-                    <a class="trend_about" href="#0">
-                        <h2 class="trend_name">Сейчас в тренде: Сад на подоконнике</h2>
+                    <a class="trend-about" href="#0">
+                        <h2 class="trend-name">Сейчас в тренде: Сад на подоконнике</h2>
                     </a>
                 </div>
             </div>
@@ -79,8 +79,8 @@
                             <a class="article-tags-link" href="#0">Food</a>
                         </li>
                     </ul>
-                    <a class="trend_about" href="#0">
-                        <h2 class="trend_name">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
+                    <a class="trend-about" href="#0">
+                        <h2 class="trend-name">Сыры на красивых картинках из интернета: какие они на вкус?</h2>
                     </a>
                 </div>
             </div>
@@ -94,8 +94,8 @@
                             <a class="article-tags-link" href="#0">travel</a>
                         </li>
                     </ul>
-                    <a class="trend_about" href="#0">
-                        <h2 class="trend_name">Собираемся в первый поход в горы</h2>
+                    <a class="trend-about" href="#0">
+                        <h2 class="trend-name">Собираемся в первый поход в горы</h2>
                     </a>
                 </div>
             </div>
@@ -109,8 +109,8 @@
                             <a class="article-tags-link" href="#0">health</a>
                         </li>
                     </ul>
-                    <a class="trend_about" href="#0">
-                        <h2 class="trend_name">Сейчас в тренде: сколько витамина с в лимонах?</h2>
+                    <a class="trend-about" href="#0">
+                        <h2 class="trend-name">Сейчас в тренде: сколько витамина с в лимонах?</h2>
                     </a>
                 </div>
             </div>
@@ -554,13 +554,13 @@
 
 
     <!-- Popup -->
-    <div class="popup">
-        <form class="popup__form">
-            <span class="popup__title section-header">Ваш фидбек</span>
+    <div class="popup-hidden">
+        <form class="popup-form">
+            <span class="popup-title section-header">Ваш фидбек</span>
             <div class="form">
-                <label class="form__group">
-                    <span class="form__hint">Как часто вы заходите на сайт?</span>
-                    <select class="form__select">
+                <label class="form-group">
+                    <span class="form-hint">Как часто вы заходите на сайт?</span>
+                    <select class="form-select">
                         <option value="Почти каждый день" selected="">Почти каждый день</option>
                         <option value="Раз в несколько дней">Раз в несколько дней</option>
                         <option value="Раз в несколько недель">Раз в несколько недель</option>
@@ -569,25 +569,23 @@
                 </label>
             </div>
             <div class="form">
-                <span class="form__hint">Вы подписаны на e-mail рассылку?</span>
-                <label class="radio__group">
-                    <input type="radio" class="radio" name="radio__group" checked>
-                    <span class="radio__group-text">Да </span>
+                <span class="form-hint">Вы подписаны на e-mail рассылку?</span>
+                <label class="radio-group">
+                    <input type="radio" class="radio" name="radio-group" checked>
+                    <span class="radio-group-text">Да </span>
                 </label>
-                <label class="radio__group round">
-                    <input type="radio" class="radio" name="radio__group">
-                    <span class="radio__group-text">Нет</span>
-                </label>
-            </div>
-            <div class="form__row">
-                <span class="form__hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                <label class="form__group">
-                    <textarea class="textarea__style" placeholder="Может больше рецептов?"></textarea>
+                <label class="radio-group round">
+                    <input type="radio" class="radio" name="radio-group">
+                    <span class="radio-group-text">Нет</span>
                 </label>
             </div>
-            <div class="form">
-                <button class="popup__btn">Отправить</button>
+            <div class="form-row">
+                <span class="form-hint">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <label class="form-group">
+                    <textarea class="textarea-style" placeholder="Может больше рецептов?"></textarea>
+                </label>
             </div>
+            <button class="popup-btn">Отправить</button>
         </form>
     </div>
 </body>
