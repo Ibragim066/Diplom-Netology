@@ -1076,6 +1076,14 @@ textarea:focus {
         margin-bottom: 15px;
     }
 
+    .width {
+        width: 170px;
+    }
+
+    .form-find {
+        width: 0;
+    }
+
     /******************* Shop *****************/
 
     .shop__item {
@@ -1205,6 +1213,10 @@ textarea:focus {
     .sidebar {
         width: 100%;
         margin-top: 40px;
+    }
+
+    .form-find {
+        width: 100%;
     }
 
     .form-query {
