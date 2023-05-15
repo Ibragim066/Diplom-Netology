@@ -1,24 +1,20 @@
 /*********** Connecting-Fonts ************/
 @font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/OpenSans-Regular.woff") format("woff"),
-        url("/fonts/OpenSans-Regular.woff2") format("woff2"),
-        url("/fonts/OpenSans-Regular.ttf") format("truetype");
+    font-family: "OpenSans";
+    src: url(/fonts/OpenSans-Regular.woff) format("woff");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src: url("/fonts/OpenSans-Bold.woff") format("woff"),
-        url("/fonts/OpenSans-Bold.woff2") format("woff2"),
-        url("/fonts/OpenSans-Bold.ttf") format("truetype");
+    font-family: "OpenSans";
+    src: url("/fonts/OpenSans-Bold.woff") format("woff");
     font-weight: bold;
 }
 
 /*********** General-Settings ************/
 html,
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-style: normal;
     background-color: #fff;
     font-size: 15px;
@@ -172,6 +168,7 @@ a {
 }
 
 .trends-list {
+    width: 100%;
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
@@ -236,6 +233,7 @@ a {
 
 
 .news-container {
+    width: 100%;
     display: block;
     position: relative;
     z-index: 1;
@@ -274,7 +272,7 @@ a {
 }
 
 .news {
-    width: 68%;
+    width: 780px;
 }
 
 .article {
@@ -282,10 +280,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.article-img {
-    max-width: 381px;
 }
 
 .article:nth-child(n + 2) {
@@ -639,22 +633,17 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: wrap;
     width: 100%;
     margin-top: 0 !important;
     padding-left: 0;
 }
 
 .shop__item {
-    /*width: 29.5%;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-
-.shop__item-img {
-    width: 100%;
+    width: 340px;
 }
 
 .shop__card {
@@ -664,16 +653,18 @@ a {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    max-width: 300px;
-    padding: 12px 0 10px;
     margin: 0;
+    padding: 0 22px 22px;
+    margin-top: -30px;
 
-    outline: 3px solid #a7973d;
-    outline-offset: 20px;
+    flex-grow: 1;
+    border: 2px solid #d3c59d;
 }
 
 .shop__card-title {
-    margin-bottom: 4px;
+    margin: 0;
+    padding: 55px 0 5px;
+    font-size: 20px;
 }
 
 .shop__item-link {
@@ -973,7 +964,7 @@ textarea:focus {
     }
 
     .header-nav-logo {
-        width: 157px;
+        width: 160px;
     }
 
     .burger-menu {
@@ -1011,17 +1002,16 @@ textarea:focus {
 
     .trends-list {
         margin-top: 20px;
-        flex-wrap: wrap;
     }
 
     .trend {
-        width: 49.65%;
+        min-height: 250px;
         padding-top: 95px;
         margin-right: 0px;
     }
 
-    .mt-5px {
-        margin-top: 5px;
+    .trend:first-child {
+        margin-left: 0;
     }
 
     .trend-name {
@@ -1039,11 +1029,11 @@ textarea:focus {
     }
 
     .news {
+        width: calc(100% - 220px);
         margin-right: 36px;
     }
 
     .article {
-        width: 100%;
         flex-direction: column;
         margin-bottom: 42px;
         border-bottom: 3px solid #eeeeee;
@@ -1086,20 +1076,24 @@ textarea:focus {
     /******************* Shop *****************/
 
     .shop__item {
-        max-width: 47%;
         margin-top: 25px;
+        width: calc(50% - 10px);
+    }
+
+    .shop__item:nth-child(odd) {
+        margin-right: 20px;
     }
 
     .shop__title {
         margin-bottom: 0;
     }
 
-    .shop__card {
-        outline-offset: 10px;
-    }
-
     .shop__card-title {
         font-size: 17px;
+    }
+
+    .shop__list {
+        flex-wrap: wrap;
     }
 
     .shop__card-bottom {
@@ -1111,6 +1105,42 @@ textarea:focus {
     .footer {
         margin-bottom: 40px;
     }
+}
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
+
+    .trend {
+        width: calc(25% - 3px);
+        margin-left: 4px;
+    }
+
+    .trend:first-child {
+        margin-left: 0;
+    }
+
+}
+
+
+
+
+@media (min-width: 641px) and (max-width: 1199px) and (orientation: portrait) {
+
+    .trends-list {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: calc(50% - 2px);
+    }
+
+    .trend:nth-child(n - 3) {
+        margin-top: 3px;
+    }
+
+    .trend:nth-child(even) {
+        margin-left: 4px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -1165,6 +1195,10 @@ textarea:focus {
 
     .trends {
         margin-top: 30px;
+    }
+
+    .trends-head {
+        font-size: 16px;
     }
 
     .section-header {
@@ -1242,5 +1276,43 @@ textarea:focus {
     .popup-btn {
         padding: 15px 90px;
         color: #ffffff;
+    }
+}
+
+@media (max-width: 640px) and (orientation: landscape) {
+
+    .trends-list {
+        flex-wrap: wrap;
+    }
+
+    .trend {
+        width: calc(50% - 2px);
+    }
+
+    .trend:nth-child(n - 3) {
+        margin-top: 3px;
+    }
+
+    .trend:nth-child(even) {
+        margin-left: 4px;
+    }
+
+}
+
+
+
+@media (max-width: 640px) and (orientation: portrait) {
+
+    .trends-list {
+        flex-direction: column;
+    }
+
+    .trend {
+        width: 100%;
+        margin-top: 3px;
+    }
+
+    .trend:first-child {
+        margin-top: 0;
     }
 }
