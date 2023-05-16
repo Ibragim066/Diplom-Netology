@@ -175,7 +175,6 @@ a {
 
 .trends-list {
     width: 100%;
-    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -186,7 +185,7 @@ a {
     display: flex;
     align-items: flex-end;
     margin-right: 4px;
-    padding: 8% 1.25em 1em 1.25em
+    padding: 8.5% 1em 1em 1em
 }
 
 .trend::after {
@@ -246,7 +245,7 @@ a {
     text-transform: uppercase;
     border: 3px solid #b59f5b;
     color: #fff;
-    padding: 2em;
+    padding: 27px 35px 35px 39px;
 }
 
 .mb-12px {
@@ -274,7 +273,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
 }
 
 .news {
@@ -289,7 +288,7 @@ a {
 }
 
 .article:nth-child(n + 2) {
-    margin-top: 57px;
+    margin-top: 60px;
 }
 
 .article-box {
@@ -623,7 +622,8 @@ a {
 .products {
     display: flex;
     flex-direction: column;
-    margin-bottom: 70px;
+    margin-bottom: 65px;
+    padding: 0 19px;
 }
 
 .products-title {
@@ -667,12 +667,12 @@ a {
     flex-direction: column;
     flex-grow: 1;
     border: 2px solid #d3c59d;
-    padding: 0 22px 22px;
+    padding: 0 19px 22px;
     margin-top: -30px;
 }
 
 .product-article-title {
-    padding: 55px 0 0;
+    padding: 44px 0 0;
     font-size: 20px;
 }
 
@@ -700,6 +700,7 @@ a {
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    margin-top: 23px;
 }
 
 .price {
@@ -1037,7 +1038,7 @@ textarea:focus {
     }
 
     .sidebar {
-        width: 220px;
+        width: 280px;
     }
 
     /****************** News *****************/
@@ -1047,8 +1048,8 @@ textarea:focus {
     }
 
     .news {
-        width: calc(100% - 220px);
-        margin-right: 36px;
+        width: calc(100% - 295px);
+        margin-right: 35px;
     }
 
     .article {
@@ -1071,7 +1072,7 @@ textarea:focus {
     }
 
     .article-title {
-        font-size: 17px;
+        font-size: 16px;
         margin-bottom: 28px;
     }
 
@@ -1206,16 +1207,17 @@ textarea:focus {
     .header-nav {
         background: url('images/banner-mobile.jpg') no-repeat center center / cover;
         padding-top: 30px;
-        padding-bottom: 215px;
+        padding-bottom: 190px;
         position: relative;
+        margin-bottom: 0;
     }
 
     .burger-menu {
         display: inline-block;
         cursor: pointer;
         position: absolute;
-        top: 20px;
-        right: 25px;
+        top: 2px;
+        right: 15px;
     }
 
     .top,
@@ -1249,38 +1251,43 @@ textarea:focus {
     .header-nav-title {
         width: 280px;
         font-size: 26px;
-        margin-top: 40px;
+        margin-top: 28px;
+        line-height: 1.4;
     }
 
     .trends {
-        margin-top: 30px;
+        margin-top: 38px;
     }
 
     .trends-head {
         font-size: 16px;
     }
 
-    .section-header {
-        /*******************/
-        font-size: 1rem;
-    }
-
     .trends-list {
-        margin-top: 25px;
         flex-direction: column;
     }
 
     .trend {
+        min-height: 231px;
         width: 100%;
-        margin-bottom: 4px;
+    }
+
+    .trend-name {
+        font-size: 16px;
     }
 
     .for-content {
         flex-direction: column;
+        margin-top: 45px;
+        margin-bottom: 44px;
     }
 
     .news {
         width: 100%;
+    }
+
+    .news-container {
+        padding: 32px 10px 30px 20px;
     }
 
     .article {
@@ -1290,22 +1297,64 @@ textarea:focus {
         border-bottom: 3px solid #eeeeee;
     }
 
+    .article:nth-child(n + 2) {
+        margin-top: -1px;
+    }
+
     .article-photo {
         width: 100%;
     }
 
     .article-box {
         margin-left: 0;
-        margin-top: 16px;
+        margin-top: 8px;
+    }
+
+    .article-title {
+        font-size: 16px;
+        margin-bottom: 17px;
+    }
+
+    .date-author {
+        margin-bottom: 12px;
+    }
+
+    .box-text {
+        padding-left: 0;
     }
 
     .text {
         margin-bottom: 15px;
+        font-size: 14px;
+        padding-right: 10px;
     }
 
     .sidebar {
         width: 100%;
-        margin-top: 40px;
+    }
+
+    .sidebar-section {
+        margin-bottom: 0;
+    }
+
+    .section-header {
+        font-size: 16px;
+    }
+
+    .posts:last-child {
+        margin-bottom: 58px;
+    }
+
+    .form-search {
+        margin-bottom: 38px;
+    }
+
+    .margin {
+        margin: 0;
+    }
+
+    .form-subscribe-button {
+        margin-bottom: 37px;
     }
 
     .form-find {
@@ -1316,20 +1365,36 @@ textarea:focus {
         width: 100%;
     }
 
+    /************** Tags **********/
+    .tag-box {
+        margin-bottom: 41px;
+    }
+
+    .tag-item {
+        margin-right: 8px;
+        margin-top: 5px;
+    }
+
+    /************** Categories ************/
+    .categories {
+        padding-left: 0;
+    }
+
     /************** Products ******************/
 
     .products {
         width: 100%;
-        padding: 0 15px 50px;
+        padding: 0;
+        margin-bottom: 45px;
     }
 
     .products-title {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .products-articles {
         flex-direction: column;
-        margin-top: 30px;
+        margin-top: 5px;
     }
 
     .product {
@@ -1337,7 +1402,7 @@ textarea:focus {
     }
 
     .product-picture {
-        padding: 26px 26px 0;
+        padding: 22px 26px 0;
     }
 
     .product-picture>source,
@@ -1347,17 +1412,17 @@ textarea:focus {
     }
 
     .product-article {
-        padding: 0 22px 22px;
+        padding: 0 23px 25px;
         margin-top: -30px;
     }
 
     .product-article-title {
-        padding: 55px 0 0;
-        font-size: 20px;
+        padding: 45px 0 0;
+        font-size: 16px;
     }
 
     .product-description {
-        padding: 5px 0;
+        padding: 3px 0;
         font-size: 15px;
     }
 
@@ -1372,6 +1437,17 @@ textarea:focus {
 
     .new-price {
         font-size: 20px;
+    }
+
+    /**************** Footer *************/
+
+    .copy-box {
+        margin-bottom: 0;
+        margin-top: 45px;
+    }
+
+    .copy {
+        padding-left: 10px;
     }
 
     /************** Popup ******************/
