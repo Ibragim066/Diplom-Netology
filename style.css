@@ -272,7 +272,7 @@ a {
 .for-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 60px;
+    margin-top: 55px;
     margin-bottom: 60px;
 }
 
@@ -285,6 +285,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-bottom: 62px;
+}
+
+.article:last-child {
+    margin-bottom: 0;
 }
 
 .article-box {
@@ -1064,7 +1069,7 @@ textarea:focus {
 
     .article {
         flex-direction: column;
-        margin-bottom: 41px;
+        margin-bottom: 44px;
         border-bottom: 3px solid #eeeeee;
     }
 
@@ -1079,6 +1084,10 @@ textarea:focus {
     .article-box {
         margin-left: 0;
         margin-top: 16px;
+    }
+
+    .pr {
+        padding-right: 10px;
     }
 
     .article-title {
@@ -1321,6 +1330,10 @@ textarea:focus {
         flex-direction: column;
         border-bottom: 3px solid #eeeeee;
         margin-bottom: 37px;
+    }
+
+    .article:last-child {
+        margin-bottom: 40px;
     }
 
     .article-photo {
