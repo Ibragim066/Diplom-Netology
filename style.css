@@ -287,10 +287,6 @@ a {
     align-items: flex-start;
 }
 
-.article:nth-child(n + 2) {
-    margin-top: 60px;
-}
-
 .article-box {
     margin-left: 30px;
 }
@@ -832,9 +828,9 @@ a {
     width: 392px;
     position: fixed;
     left: 50%;
-    top: 50%;
+    top: 44%;
     transform: translate(-50%, -50%);
-    padding: 50px 30px 50px;
+    padding: 50px 30px 38px;
     background-color: #ffffff;
 }
 
@@ -844,10 +840,7 @@ a {
     color: #000;
     text-align: center;
     font-size: 20px;
-}
-
-.form {
-    margin: 15px 0;
+    margin-bottom: 20px;
 }
 
 .form-hint {
@@ -864,6 +857,7 @@ a {
     width: 100%;
     height: 45px;
     padding-left: 20px;
+    margin-bottom: 35px;
     background: url('svg/form-arrows.svg');
     background-repeat: no-repeat;
     background-position: top 45% right 15px;
@@ -951,7 +945,7 @@ textarea:focus {
     border: none;
     padding: 15px 120px;
     color: #ffffff;
-    margin-top: 20px;
+    margin-top: 40px;
 
     background-color: #b59f5b;
     font-family: inherit;
@@ -980,6 +974,8 @@ textarea:focus {
     .header-nav {
         background-image: url('images/banner-bg-tablet.jpg');
         padding-top: 40px;
+        padding-bottom: 92px;
+        margin-bottom: 42px;
     }
 
     .header-nav-logo {
@@ -1009,28 +1005,41 @@ textarea:focus {
     }
 
     .header-nav-title {
-        width: 600px;
+        width: 645px;
         font-size: 40px;
+        line-height: 1.4;
+        margin-top: 86px;
     }
 
     /******************** Trends *******************/
 
     .trends-head {
-        font-size: 20px;
+        font-size: 18px !important;
+        margin-bottom: 15px;
     }
 
     .trends-list {
-        margin-top: 20px;
+        flex-wrap: wrap;
+        flex-direction: row !important;
     }
 
     .trend {
-        min-height: 250px;
-        padding-top: 95px;
-        margin-right: 0px;
+        width: calc(50% - 2px);
+        margin-right: 0;
+        min-height: 247px;
+        padding-top: 65px;
     }
 
-    .trend:first-child {
-        margin-left: 0;
+    .news-container {
+        padding: 27px 36px 30px 37px;
+    }
+
+    .trend:nth-child(n - 3) {
+        margin-top: 3px;
+    }
+
+    .trend:nth-child(even) {
+        margin-left: 4px;
     }
 
     .trend-name {
@@ -1044,7 +1053,8 @@ textarea:focus {
     /****************** News *****************/
 
     .for-content {
-        margin-top: 50px;
+        margin-top: 45px;
+        margin-bottom: 45px;
     }
 
     .news {
@@ -1054,7 +1064,7 @@ textarea:focus {
 
     .article {
         flex-direction: column;
-        margin-bottom: 42px;
+        margin-bottom: 41px;
         border-bottom: 3px solid #eeeeee;
     }
 
@@ -1096,7 +1106,8 @@ textarea:focus {
 
     .products {
         width: 100%;
-        padding: 0 35px 50px;
+        padding: 0 35px 53px;
+        margin-bottom: 0;
     }
 
     .products-title {
@@ -1106,12 +1117,12 @@ textarea:focus {
     .products-articles {
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .product {
         width: calc(50% - 10px);
-        margin-top: 20px;
+        margin-top: 23px;
     }
 
     .product:nth-child(odd) {
@@ -1126,24 +1137,23 @@ textarea:focus {
     .product-picture>source,
     .product-picture>img {
         width: 100%;
+        height: 222px;
         flex: auto;
     }
 
     .product-article {
         width: 100%;
-        padding: 0 22px 22px;
+        padding: 0 22px 23px;
         margin-top: -30px;
     }
 
     .product-article-title {
-        padding: 55px 0 0;
+        padding: 47px 0 0;
         font-size: 17px;
     }
 
     .product-description {
         width: 100%;
-        flex: auto;
-        padding: 5px 0;
         font-size: 15px;
     }
 
@@ -1160,19 +1170,34 @@ textarea:focus {
         font-size: 20px;
     }
 
+    .to-shop {
+        width: 273px;
+    }
+
     /******************* Footer **************************/
 
     .footer {
         margin-bottom: 40px;
     }
+
+    .socials {
+        padding-left: 5px;
+    }
+
+    .copy-box {
+        margin-top: 46px;
+    }
+
+    .copy {
+        padding-left: 12px;
+    }
+
+    /************* Popup *******************/
+
+
 }
 
 @media (min-width: 641px) and (max-width: 1199px) and (orientation: landscape) {
-
-    .trend {
-        width: calc(25% - 3px);
-        margin-left: 4px;
-    }
 
     .trend:first-child {
         margin-left: 0;
@@ -1206,7 +1231,7 @@ textarea:focus {
 @media (max-width: 640px) {
     .header-nav {
         background: url('images/banner-mobile.jpg') no-repeat center center / cover;
-        padding-top: 30px;
+        padding-top: 26px;
         padding-bottom: 190px;
         position: relative;
         margin-bottom: 0;
@@ -1257,10 +1282,11 @@ textarea:focus {
 
     .trends {
         margin-top: 38px;
+        margin-bottom: 43px;
     }
 
     .trends-head {
-        font-size: 16px;
+        font-size: 16px !important;
     }
 
     .trends-list {
@@ -1278,8 +1304,8 @@ textarea:focus {
 
     .for-content {
         flex-direction: column;
-        margin-top: 45px;
-        margin-bottom: 44px;
+        margin-top: 0;
+        margin-bottom: 48px;
     }
 
     .news {
@@ -1287,27 +1313,24 @@ textarea:focus {
     }
 
     .news-container {
-        padding: 32px 10px 30px 20px;
+        padding: 30px 10px 30px 20px;
     }
 
     .article {
         width: 100%;
         flex-direction: column;
-        margin-bottom: 42px;
         border-bottom: 3px solid #eeeeee;
-    }
-
-    .article:nth-child(n + 2) {
-        margin-top: -1px;
+        margin-bottom: 37px;
     }
 
     .article-photo {
         width: 100%;
+        margin-bottom: 10px;
     }
 
     .article-box {
         margin-left: 0;
-        margin-top: 8px;
+        padding-bottom: 23px;
     }
 
     .article-title {
@@ -1316,7 +1339,7 @@ textarea:focus {
     }
 
     .date-author {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .box-text {
@@ -1324,9 +1347,8 @@ textarea:focus {
     }
 
     .text {
-        margin-bottom: 15px;
         font-size: 14px;
-        padding-right: 10px;
+        padding-right: 8px;
     }
 
     .sidebar {
@@ -1354,7 +1376,7 @@ textarea:focus {
     }
 
     .form-subscribe-button {
-        margin-bottom: 37px;
+        margin-bottom: 35px;
     }
 
     .form-find {
@@ -1367,7 +1389,7 @@ textarea:focus {
 
     /************** Tags **********/
     .tag-box {
-        margin-bottom: 41px;
+        margin-bottom: 40px;
     }
 
     .tag-item {
