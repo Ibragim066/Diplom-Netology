@@ -272,8 +272,8 @@ a {
 .for-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 55px;
-    margin-bottom: 60px;
+    margin-top: 57px;
+    margin-bottom: 57px;
 }
 
 .news {
@@ -794,7 +794,7 @@ a {
 
 .copy-box {
     text-align: center;
-    margin-top: 73px;
+    margin-top: 71px;
 }
 
 .copy {
@@ -803,6 +803,7 @@ a {
     color: #999999;
     font-size: 12px;
     font-weight: 700;
+    padding-left: 10px;
 }
 
 /***************POPUP******************/
@@ -1018,6 +1019,10 @@ textarea:focus {
 
     /******************** Trends *******************/
 
+    .trends {
+        margin-bottom: 47px;
+    }
+
     .trends-head {
         font-size: 18px !important;
         margin-bottom: 15px;
@@ -1058,8 +1063,8 @@ textarea:focus {
     /****************** News *****************/
 
     .for-content {
-        margin-top: 45px;
-        margin-bottom: 45px;
+        margin-top: 0px;
+        margin-bottom: 49px;
     }
 
     .news {
@@ -1069,7 +1074,7 @@ textarea:focus {
 
     .article {
         flex-direction: column;
-        margin-bottom: 44px;
+        margin-bottom: 43px;
         border-bottom: 3px solid #eeeeee;
     }
 
@@ -1079,11 +1084,15 @@ textarea:focus {
 
     .article-photo {
         width: 100%;
+        margin-bottom: 16px;
     }
 
     .article-box {
         margin-left: 0;
-        margin-top: 16px;
+    }
+
+    .article-tags {
+        margin-bottom: 12px;
     }
 
     .pr {
@@ -1092,11 +1101,16 @@ textarea:focus {
 
     .article-title {
         font-size: 16px;
-        margin-bottom: 28px;
+        margin-bottom: 27px;
+        margin-top: 0;
     }
 
     .date-author {
-        margin-bottom: 33px;
+        margin-bottom: 28px;
+    }
+
+    .article-date {
+        margin-right: 8px;
     }
 
     .text {
@@ -1126,12 +1140,12 @@ textarea:focus {
     .products-articles {
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 10px;
+        margin-top: 7px;
     }
 
     .product {
         width: calc(50% - 10px);
-        margin-top: 23px;
+        margin-top: 24px;
     }
 
     .product:nth-child(odd) {
